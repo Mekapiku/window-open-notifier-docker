@@ -9,6 +9,7 @@ ENV SOURCE_IMG="/tmp/screenshot.png"
 ENV LEAFEE_SIZE="3"
 
 # Install vncscreenshot
+RUN apt-get update
 RUN apt-get install -y vncsnapshot
 
 # Add Ruby Script
