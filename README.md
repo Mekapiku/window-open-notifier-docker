@@ -20,7 +20,7 @@ docker run --rm -e IPHONE_IP="192.168.1.70" \
 ## 出力結果(例)
 ```
 {
-    "mags": [
+    "leafee": [
         {
             "id": 0,
             "state": "locked"
