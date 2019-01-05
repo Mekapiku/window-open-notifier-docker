@@ -39,9 +39,13 @@ docker run --rm -e IPHONE_IP="192.168.1.70" \
 
 ## 環境変数
 `IPHONE_IP` Leafeeアプリを動かしているiPhoneのIPアドレス
+
 `VNC_PASSWD_FILE` `vncpasswd`コマンドで生成したファイルパス
+
 `OUTPUT_FILE` 結果の出力先：デフォルト`/tmp/leafee.json`
+
 `SOURCE_IMG` `vncsnapshot`コマンドで取得されたスクリーンショット保存先：デフォルト`/tmp/screenshot.png`
+
 `LEAFEE_SIZE` Leafee magの利用数
 
 ## その他
