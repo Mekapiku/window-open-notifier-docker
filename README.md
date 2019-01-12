@@ -9,7 +9,7 @@ docker build -t window-open-notifier/window-open-notifier .
 docker run --rm -e IPHONE_IP="192.168.1.70" \
                 -e VNC_PASSWD_FILE="/data/vnc_passwd" \
                 -e OUTPUT_FILE="/tmp/leafee.json"
-                -e SOURCE_IMG="/tmp/screenshot.png"
+                -e SOURCE_IMG="/tmp/screenshot.jpg"
                 -e LEAFEE_SIZE="3" \
                 -v /data:/data \
                 -v /tmp:/tmp \
@@ -44,7 +44,7 @@ docker run --rm -e IPHONE_IP="192.168.1.70" \
 
 `OUTPUT_FILE` 結果の出力先：デフォルト`/tmp/leafee.json`
 
-`SOURCE_IMG` `vncsnapshot`コマンドで取得されたスクリーンショット保存先：デフォルト`/tmp/screenshot.png`
+`SOURCE_IMG` `vncsnapshot`コマンドで取得されたスクリーンショット保存先：デフォルト`/tmp/screenshot.jpg`
 
 `LEAFEE_SIZE` Leafee magの利用数
 
