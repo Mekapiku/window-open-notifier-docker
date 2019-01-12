@@ -5,7 +5,7 @@ MAINTAINER	Mekapiku <mekapiku@gmail.com>
 ENV IPHONE_IP="192.168.1.70"
 ENV VNC_PASSWD_FILE="/data/vnc_passwd"
 ENV OUTPUT_FILE="/tmp/leafee.json"
-ENV SOURCE_IMG="/tmp/screenshot.png"
+ENV SOURCE_IMG="/tmp/screenshot.jpg"
 ENV LEAFEE_SIZE="3"
 
 # Install vncscreenshot
@@ -20,5 +20,5 @@ git clone https://github.com/Mekapiku/window-open-notifier.git
 # Exec app
 WORKDIR /root/window-open-notifier
 CMD cd /root/window-open-notifier && \
-vncsnapshot -passwd ${VNC_PASSWD_FILE} ${IPHONE_IP} ${SOURCE_IMG} && \
+vncsnapshot -fps 1 -passwd ${VNC_PASSWD_FILE} ${IPHONE_IP} ${SOURCE_IMG} && \
 python ./app.py ${OUTPUT_FILE} ${SOURCE_IMG} ${LEAFEE_SIZE}
